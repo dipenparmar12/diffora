@@ -1,3 +1,124 @@
+
+
+.coverage
+htmlcov/**
+
+.DS_Store
+*.pyc
+*.pyc.*
+
+*.ipynb_checkpoints
+xerohomeapp37
+pete_scripts
+stats/stats*
+stats/stats*
+
+# *.sql
+*.log
+logs/**
+migrations/versions/*.json
+.idea/**
+
+src/xerohome-engine
+
+# GitHub instructions
+.github/instructions
+.github/context-mode
+.github/copilot-instructions-django.md
+.github/hooks/context-mode.json
+.github/todos-wip.md
+.github/todo.md
+
+
+# Configuration files (contain sensitive database credentials)
+scripts/db_operations_framework/configs/local.json
+scripts/db_operations_framework/configs/development.json
+scripts/db_operations_framework/configs/staging.json
+scripts/db_operations_framework/configs/production.json
+scripts/db_operations_framework/configs/*.json
+!scripts/db_operations_framework/configs/example_config.json
+
+# Developer-specific configuration files
+secrets/*.json
+!secrets/secrets/_CommonConfig.json
+secrets/DipenDevConfiguration.secrets.json
+secrets/DipenDevConfiguration.setting.json
+# VS Code SFTP config (contains server/keys)
+.vscode/sftp.json
+
+.output
+.outputs
+.github/copilot-instructions*.md
+
+# Static assets (symlinked from /var/www/xerohome-assets/ - NOT in repo)
+xerohome/static/downloadables/
+xerohome/static/images/
+xerohome/static/documents/
+
+# Ignore CSV files in django/media/gba
+django/media/gba/**
+django/media/**/*.csv
+django/media/**/*.json
+django/media/**/*.txt
+django/django_admin_project/local_settings.py
+django/logs/**
+django/staticfiles/**
+
+
+server_config/db/.env_*
+.env_*
+!.env.example
+.env
+.env.*
+
+.python-version
+.venv*
+venv*
+
+.github/Agent-task-master.md
+todo.md
+
+/.taskmaster
+
+# Logs
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dev-debug.log
+# Dependency directories
+node_modules/
+# Environment variables
+# Editor directories and files
+.idea
+.vscode/launch.json
+.vscode/settings.json
+.vscode/mcp.json
+.mcp.json
+# VSCode Example configurations (platform-specific)
+!.vscode/launch.json.example-windows
+!.vscode/launch.json.example-mac-linux
+!.vscode/settings.json.example-windows
+!.vscode/settings.json.example-mac-linux
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# OS specific
+
+# Task files
+tasks.json
+tasks/ 
+
+.claude/agents
+# context-mode MCP — managed by context-mode.sh, do not commit
+.github/hooks/context-mode.json
+
+# context-mode MCP — managed by context-mode.sh, do not commit
+.github/context-mode
+
+
 # Logs
 logs
 *.log
